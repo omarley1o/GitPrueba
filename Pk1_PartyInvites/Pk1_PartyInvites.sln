@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pk1_PartyInvites", "Pk1_PartyInvites\Pk1_PartyInvites.csproj", "{44265BC3-6E4D-4205-93FD-13A947F95624}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{44265BC3-6E4D-4205-93FD-13A947F95624}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{44265BC3-6E4D-4205-93FD-13A947F95624}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{44265BC3-6E4D-4205-93FD-13A947F95624}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{44265BC3-6E4D-4205-93FD-13A947F95624}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
