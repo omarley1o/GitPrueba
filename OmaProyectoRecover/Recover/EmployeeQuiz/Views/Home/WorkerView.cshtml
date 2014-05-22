@@ -1,0 +1,86 @@
+﻿@model EmployeeQuiz.Models.Employee
+
+@{
+ 
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" type="text/css" href="~/Content/Estilo1.css" />
+    <title>WorkerView</title>
+</head>
+<body>
+    <div class="Index">
+     @{
+         
+         <center><h1>El empleado Buscado es:</h1></center>
+         
+     try{
+          <center>
+        <table border="1">
+        <tr>
+            <td>
+                <center>
+        <img src="@Url.Content(Model.PhotoPath)"
+            alt="Sample Image"
+            width="150" height="100" /></center>
+            </td>
+        
+
+        
+        <td>
+        <p>
+            <b>ID:</b>@Model.Id
+        </p>
+        </td>
+        
+
+        
+        <td>
+        <p>
+            <b>NOMBRE:</b>@Model.Name
+        </p>
+        </td>
+        
+
+        
+        <td>
+        <p>
+            <b>APELLIDOS:</b>@Model.FirstLastname @Model.SecondLastname
+        </p>
+        </td>
+        
+
+        
+        <td>
+        <p>
+            <b>SALARIO:</b>@Model.Wage
+        </p>
+        </td>
+        
+
+        
+        <td>
+        <p>
+            <b>SEXO:</b>@Model.Sex
+        </p>
+        </td>
+        </tr>
+        </table>
+            </center>
+        }
+        
+        catch(Exception){
+        @:<center><b id="error">¡¡¡¡ EL EMPLEADO QUE BUSCA NO SE ENCUENTRA ¡¡¡¡ </b><br /> <b> POR FAVOR VERIFIQUE SU ID </b></center>
+        }
+            
+        }
+        <br />
+        <center><input class="boton negro redondo" type="button" value="Inicio" onclick="window.location.href = 'http://localhost:49160/'" /></center>
+    </div>
+</body>
+</html>
